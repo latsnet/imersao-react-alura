@@ -1,6 +1,8 @@
 import React from 'react';
 import Logo from '../../assets/img/logo.png';
-import ButtonLink from './components/ButtonLink';
+import Button from '../Button';
+
+// import ButtonLink from './components/ButtonLink';
 
 import './Menu.css';
 
@@ -11,9 +13,9 @@ function Menu() {
                 <img className="Logo" src={Logo} alt="3DFlix Logo" />
             </a>
 
-            <ButtonLink className="ButtonLink" href="/">
+            <Button as="a" className="ButtonLink" href="/">
                 Novo Vídeo
-            </ButtonLink>
+            </Button>
         </nav>
     );
 }
