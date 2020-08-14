@@ -1,9 +1,13 @@
 import styled from 'styled-components';
 
 export const InputBlock = styled.div`
+    max-width: 500px;
+    position: relative;
     display: block;
-    margin-bottom: 5%;
-    font-family: 'Ubuntu';
+    margin-bottom: 4%;
+`;
+
+InputBlock.Container = styled.div`
 `;
 
 InputBlock.Label = styled.label`
@@ -18,6 +22,9 @@ InputBlock.Input = styled.input`
     border-radius: 2px;
     display: block;
     box-shadow: none;
+    box-sizing: border-box;
+    appearance: none;
+    color: #000;
 `;
 
 InputBlock.PlaceHolder = styled.label`
